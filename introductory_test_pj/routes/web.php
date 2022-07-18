@@ -1,6 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestController;
+
+
+Route::get('/', [TestControllerer::class, 'index']);
+Route::post('/todos/create', [TestControllerer::class, 'store']);
+Route::post('/todos/update', [TestControllerer::class, 'update']);
+Route::post('/todos/delete', [TestControllerer::class, 'delete']);
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +20,3 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});

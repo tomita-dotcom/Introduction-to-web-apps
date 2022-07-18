@@ -1,0 +1,121 @@
+.container{
+  background-color: blueviolet;
+  height: 1000px;
+  width: 2000px;
+  position: relative;
+}
+
+.card{
+  background-color: white;
+  width: 500px;
+  padding: 30px;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.mb-15{
+  margin-bottom: 15px;
+}
+
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.between{
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+}
+
+input{
+  vertical-align: middle;
+}
+
+.input-add{
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+  font-size: 14px;   
+  outline: none;
+}
+
+.button-add{
+  text-align:left;
+  border: 2px solid palevioletred;
+  font-size: 12px;
+  color: palevioletred;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor:pointer;
+  transition: 0.4s;
+  outline: none;
+}
+
+table{
+  text-align: center;
+  width: 100%;
+  border-collapse:collapse;
+  border-spacing: 0;
+}
+
+tr{
+  height: 50px;
+}
+
+.input-update{
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.button-update{
+  text-align: left;
+  border: 2px solid orange;
+  font-size: 12px;
+  color: orange;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+}
+
+.button-delete {
+  text-align: left;
+  border: 2px solid #71fadc;
+  font-size: 12px;
+  color: #71fadc;
+  background-color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+}
