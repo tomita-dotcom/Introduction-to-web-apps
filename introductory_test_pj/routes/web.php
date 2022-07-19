@@ -4,11 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 
 
-
-Route::post('/todo/store', [TestController::class, 'store']);
+Route::get('/', [TestController::class, 'index']);
+Route::post('/todo/store"', [TestController::class, 'store']);
 Route::post('/todo/update', [TestController::class, 'update']);
 Route::post('/todo/delete', [TestController::class, 'delete']);
-Route::get('/', [TestController::class, 'index']);
+
 
 /*
 |--------------------------------------------------------------------------
