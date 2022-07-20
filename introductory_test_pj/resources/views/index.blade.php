@@ -35,11 +35,11 @@
               </td>
               <td>
                 <form action="/todo/update"  method="POST">@csrf
-                <button class="button-update" value="content=>$todo->content">更新</button>
+                <button class="button-update" vaue="content=>$todo->content">更新</button>
                 </form>
               </td>
               <td>
-                <form action="/todo/delete"  method="POST"> @csrf
+                <form action="/todo/delete"  metlhod="POST"> @csrf
                 <button class="button-delete" value="{{$todo->id}}">削除</button>
                 </form>
               </td>
