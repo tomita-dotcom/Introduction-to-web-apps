@@ -17,7 +17,7 @@
         <form action="/todo/store" method="post" class="flex between mb-30">
           @csrf
           <input type="text" class="input-add" name="content">
-          <input class="butoon-add" type="submit" value="追加">
+          <input class="button-add" type="submit" value="追加">
         </form>
         <table>
           <tbody>
@@ -30,18 +30,17 @@
             @foreach ($todos as $todo)
             <tr>
               <td>{{$todo->created_at}}</td>
+              <td>                
+                <input type="text" class="input-update" name="content"  value="{{$todo->content}}">
+              </td>
               <td>
                 <form action="/todo/update"  method="POST">@csrf
-                <input type="text" class="input-update" name="content"  value="{{$todo->content}}">
+                <button class="button-update" value="content=>$todo->content">更新</button>
                 </form>
               </td>
               <td>
-                <button class="button-update">更新</button>
-              </td>
-              <td>
-                <form action="/todo/delete"  method="POST">
-                  @csrf
-                  <button class="button-delete">削除</button>
+                <form action="/todo/delete"  method="POST"> @csrf
+                <button class="button-delete" value="{{$todo->id}}">削除</button>
                 </form>
               </td>
             </tr>

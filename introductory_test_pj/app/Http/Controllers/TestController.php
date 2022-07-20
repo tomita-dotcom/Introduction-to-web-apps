@@ -26,8 +26,8 @@ class TestController extends Controller
     public function update(TodoRequest $request)
     {
         $this->validate($request, Todo::$rules);
-        Todo::where('id', $request->id)->update($form);
         $form = $request->all();
+        Todo::where('content', $request->id)->update($form);
         unset($form['_token']);
         Todo::save($form);
         return redirect('/');
