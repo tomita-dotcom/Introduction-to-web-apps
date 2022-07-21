@@ -31,8 +31,9 @@
             <tr>
               <td>{{$todo->created_at}}</td>
               <td>
-                <form action="/todo/update"  method="POST">@csrf
-                <input type="text" class="input-update" name="content"  value="{{$todo->content}}">
+                <form action="/todo/update,"  method="POST">@csrf
+                <input type="text" class="input-update"
+                name="content"  value="{{$todo->content}}">
               </td>
               <td>
                 <button class="button-update" type="submit">更新</button>
