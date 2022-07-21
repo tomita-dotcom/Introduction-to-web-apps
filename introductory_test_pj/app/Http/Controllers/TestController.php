@@ -27,8 +27,7 @@ class TestController extends Controller
     {
         $this->validate($request, Todo::$rules);
         $form = $request->all();
-        dd($form);
-        Todo::where('id', $request->content)->update($form);
+        Todo::where('id', $request->id)->update($form);
         unset($form['_token']);
         Todo::save($form);
         return redirect('/');
@@ -37,7 +36,6 @@ class TestController extends Controller
     public function delete(Request $request)
     {
         Todo::find($request->id)->delete();
-        dd($request);
         return redirect('/');
     }
 }
